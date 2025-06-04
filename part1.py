@@ -14,7 +14,7 @@ class EulerTotient:
     
     @staticmethod
     def prime_factors(n):
-        #find unique prime factos of n
+        #find unique prime factors of n
         i = 2
         factors = set()
         while i * i <= n:
@@ -42,6 +42,7 @@ class EulerTotient:
         assert basic == efficient, f"Mismatch as n={n}"
         return basic
     
+    #section 2 part 1
 if __name__ == "__main__":
     for n in range(2,21):
         phi = EulerTotient.verify_methods(n)

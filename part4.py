@@ -14,7 +14,7 @@ class EulerTotient:
     
     @staticmethod
     def prime_factors(n):
-        #find unique prime factos of n
+        #find unique prime factosr of n
         i = 2
         factors = set()
         while i * i <= n:
@@ -46,6 +46,7 @@ class EulerTotient:
         total = sum(EulerTotient.efficient_phi(d) for d in range(1, n+1) if n % d == 0)
         return total
     
+    #section 2 part 3
 if __name__ == "__main__":
     for n in range(1,21):
         s = EulerTotient.sum_totients(n)
